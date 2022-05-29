@@ -103,5 +103,5 @@ if __name__ == '__main__':
 - **University:** _BSU. Faculty of Radiophysics and Computer Technologies (2013-2017)_
 - **Cources:** _RS Schools Course «JavaScript/Front-end. Stage 0» (unfinished)_
 - **Languages:**
- - _English - A2_
- - _Russian - Native_
+  - _English - A2_
+  - _Russian - Native_
