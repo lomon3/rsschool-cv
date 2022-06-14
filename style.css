@@ -1,1 +1,215 @@
-:empty
+:root {
+    --color-font: #4A5F75;
+    --color-nav: #222B36;
+    --color-back: #ebf5ffc7;
+    --color-1: #8AB1DB;
+    --color-2: #4A5F75;
+    --color-3: #7292B5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    /*  border: 0.1px solid rgb(2, 255, 2); */
+}
+
+.border {
+    border: 0.1px solid rgb(2, 255, 2);
+}
+
+h1 {
+    color: #364555;
+    font-size: 2.6vw;
+}
+
+h2 {
+    color: #364555;
+    margin-bottom: 0.2em;
+    font-size: 1.6vw;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.1vw;
+    color: var(--color-font);
+    text-align: center;
+    background: url("./assets/img/bg.jpg") repeat;
+    background-color: #75abe6d8;
+    background-blend-mode: multiply;
+    transition: background-image 1s ease-in-out;
+}
+
+.wrap {
+    background-color: var( --color-back);
+    border-radius: 0.1em;
+    box-shadow: 0px 0em 0.2em 0.1em #8699af54;
+}
+
+
+/* header with nav */
+
+header {
+    margin-top: 0.5%;
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+}
+
+nav {
+    margin-top: 1em;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 150%;
+}
+
+.nav-link {
+    color: var(--color-font);
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    border-radius: 0.1em;
+    background-color: var(--color-font);
+    bottom: -0.1em;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--color-font);
+}
+
+.nav-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.about-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    margin-top: 1.2em;
+    width: 20%;
+    border-radius: 0.2em;
+    box-shadow: 0px 0em 0.2em 0.1em #fdf9ff2f;
+}
+
+.about-text {
+    width: 50%;
+    font-size: 1.4vw;
+    margin-left: 3em;
+    text-align: left;
+}
+
+.about-info {
+    margin-top: 2em;
+}
+
+
+/* main with sections */
+
+main {
+    margin-top: 0.7em;
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-side {
+    width: 29%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left-blocks {
+    width: 90%;
+    height: auto;
+    font-size: 1.4vw;
+    text-align: left;
+}
+
+.right-side {
+    width: 70%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.right-blocks {
+    width: 90%;
+    height: auto;
+    font-size: 1.4vw;
+    text-align: left;
+}
+
+footer {
+    width: 95%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-github-logo {
+    width: 15%;
+    height: auto;
+}
+
+.footer-rss-logo {
+    width: 4vw;
+    height: auto;
+}
+
+ul {
+    list-style-position: inside;
+}
