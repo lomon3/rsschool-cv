@@ -1,1 +1,248 @@
-:empty
+:root {
+    --color-main: rgb(142, 164, 230);
+    --color-body: rgb(26, 74, 218);
+    --color-shadow: rgba(18, 64, 201, 0.404);
+    --color-link: rgb(252, 251, 255);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: rgb(0, 61, 175);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    margin: 10px;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-body);
+    background: linear-gradient(rgb(255, 255, 255), rgb(241, 248, 255));
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 50px;
+}
+
+
+/** head **/
+
+.header {
+    border-radius: 10px;
+    padding-top: 5px;
+    margin: 10px 15px;
+    background-color: var(--color-main);
+    box-shadow: 0px 1px 5px 2px var(--color-shadow);
+}
+
+.navigation {
+    display: flex;
+    justify-content: right;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px;
+    list-style: none;
+}
+
+.nav-link {
+    position: relative;
+    padding: 0 14px;
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: -5px;
+    width: calc(100% - 24px);
+    height: 2px;
+    background-color: rgb(207, 214, 238);
+    opacity: 0;
+    transition-duration: 0.8s;
+    transition-timing-function: linear;
+    ;
+}
+
+.nav-link:hover::after {
+    opacity: 0.9;
+}
+
+
+/** main **/
+
+.main {
+    margin-bottom: auto;
+}
+
+.line {
+    width: 90%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: var(--color-main);
+    box-shadow: 0px 0.5px 2px 0.5px var(--color-shadow);
+}
+
+.section {
+    width: calc(50% - 20px);
+    padding: 10px;
+    padding-bottom: 35px;
+}
+
+.section2 {
+    width: calc(50% - 200px);
+    padding: 1px;
+    padding-bottom: 3px;
+}
+
+.section-profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+}
+
+.pre {
+    padding: 0;
+    margin: 0;
+}
+
+.avatar {
+    width: 250px;
+    height: auto;
+    border-radius: 80%;
+    filter: none;
+    box-shadow: 0px 0.5px 2px 0.5px var(--color-shadow);
+    transition: .4s;
+}
+
+.avatar:hover {
+    width: 550px;
+    height: auto;
+    filter: hue-rotate(90deg) brightness(1.05);
+}
+
+.section-profile-name {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: .4rem;
+    position: relative;
+    top: 80px;
+    right: 200px;
+    margin-bottom: 0px;
+    color: rgb(16, 88, 221);
+    line-height: 5px;
+}
+
+.section-item {
+    position: relative;
+    margin: 10px;
+    margin-bottom: 0px;
+    padding-left: 30px;
+}
+
+.section-item-lang {
+    padding-left: 60px;
+}
+
+.contacts-link {
+    outline: none;
+    text-decoration: none;
+    font-style: oblique 20deg;
+    color: rgb(99, 150, 245);
+}
+
+contacts-link:hover {
+    text-decoration: underline rgb(99, 150, 245);
+    cursor: default;
+}
+
+.section-code {
+    justify-content: space-between;
+    width: calc(100% - 40px);
+    padding-left: 8%;
+}
+
+.code-details {
+    border: 1px solid var(--color-main);
+    width: calc(100% - 40px);
+    border-radius: 10px;
+    padding: .1em .1em 0;
+}
+
+.code-summary {
+    margin: .1em .1em 0;
+    padding: 10px;
+}
+
+.code-details[open] {
+    padding: .1em;
+}
+
+.code-details[open] .code-summary {
+    border-bottom: 1px dotted var(--color-main);
+    margin-bottom: .1em;
+}
+
+
+/** footer **/
+
+.footer {
+    border-radius: 10px;
+    padding: 2px 40px;
+    margin: 10px 15px;
+    background-color: var(--color-main);
+    box-shadow: 0px 1px 5px 2px var(--color-shadow);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: var(--color-link);
+}
+
+.footer-year {
+    font: italic 1.2em "Fira Sans", serif;
+}
+
+.footer-github-logo {
+    width: 32px;
+    height: auto;
+}
+
+.footer-rss-logo {
+    width: 120px;
+    height: auto;
+}
