@@ -116,27 +116,11 @@ body {
 }
 
 .section {
-    width: calc(50% - 20px);
-    padding: 10px;
-    padding-bottom: 35px;
-}
-
-.section2 {
-    width: calc(50% - 200px);
-    padding: 1px;
-    padding-bottom: 3px;
-}
-
-.section-profile {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    width: 100%;
     padding: 10px;
-}
-
-.pre {
-    padding: 0;
-    margin: 0;
+    padding-bottom: 35px;
 }
 
 .avatar {
@@ -167,6 +151,12 @@ body {
     line-height: 5px;
 }
 
+.section-low {
+    width: calc(50% - 200px);
+    padding: 1px;
+    padding-bottom: 3px;
+}
+
 .section-item {
     position: relative;
     margin: 10px;
@@ -178,14 +168,14 @@ body {
     padding-left: 60px;
 }
 
-.contacts-link {
+.main-link {
     outline: none;
     text-decoration: none;
     font-style: oblique 20deg;
     color: rgb(99, 150, 245);
 }
 
-contacts-link:hover {
+.main-link:hover {
     text-decoration: underline rgb(99, 150, 245);
     cursor: default;
 }
