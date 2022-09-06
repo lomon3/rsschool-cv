@@ -102,8 +102,8 @@ if __name__ == '__main__':
 
 - **University:** _BSU. Faculty of Radiophysics and Computer Technologies (2013-2017)_
 - **Cources:** 
-_RS Schools Course «JavaScript/Front-end. Stage 0» ([certificate][https://app.rs.school/certificate/40rf6vq6])_
-_RS Schools Course «JavaScript/Front-end. Stage 1» (now)_
+_RS Schools Course «JavaScript/Front-end. Stage0» ([certificate][https://app.rs.school/certificate/40rf6vq6])_
+_RS Schools Course «JavaScript/Front-end. Stage1» (now)_
 - **Languages:**
   - _English - A2_
   - _Russian - Native_
