@@ -209,3 +209,7 @@ footer {
     width: 4vw;
     height: auto;
 }
+
+ul {
+    list-style-position: inside;
+}
