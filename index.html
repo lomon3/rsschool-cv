@@ -8,191 +8,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./assets/img/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container navigation">
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="#contacts" class="nav-link">Contacts</a></li>
-                    <li><a href="#about" class="nav-link">About myself</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#education" class="nav-link">Education</a></li>
-                    <li><a href="#languages" class="nav-link">Languages</a></li>
-                    <li><a href="#code" class="nav-link">Code example</a></li>
+    <header class="wrap">
 
-                </ul>
-            </nav>
-        </div>
+        <section class="about-section">
+            <img src="./assets/img/Avatar_640_640.jpg" alt="MY photo" class="avatar">
+            <div class="about-text">
+                <h1>Artem Chernushevich</h1>
+                <h2>// Front-end Developer</h2>
+                <p class="about-info" id="about-info">
+                    At the moment I work as the head of the sales department of toys and lifestyle products on the largest CIS marketplaces.<br> I realized that I want to develop in the field of programming.
+                </p>
+            </div>
+        </section>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#about-info" class="nav-link">About myself</a></li>
+                <li><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li><a href="#languages" class="nav-link">Languages</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#code_example" class="nav-link">Code example</a></li>
+            </ul>
+        </nav>
+
     </header>
-    <main class="main">
-        <div class="container">
-            <section class="section">
-                <img src="./assets/img/Avatar_640_640.jpg" alt="MY photo" class="avatar">
-                <div class="section-profile-name">
-                    <h1>Artem Chernushevich</h1>
-                    <h5>FRONT END DEVELOPER</h5>
-                </div>
-            </section>
-            <div class="line"></div>
-            <section class="section">
-                <div class="section-low" id="contacts">
-                    <h2>//Contacts:</h2>
-                    <ul>
-                        <li class="section-item">
-                            <b>Location:</b> Minsk, Belarus
-                        </li>
-                        <li class="section-item">
-                            <details>
-                                <summary><b>Phone:</b></summary>
-                                <a href="tel:+375299380510" class="main-link" title="toriri-torito">+375-29-938-05-10</a>
-                            </details>
-                        </li>
-                        <li class="section-item">
-                            <b>E-mail:</b> <a href="mailto:lomon3@gmail.com&body=привет,Артем?subject=Дело" class="main-link" title="lomon3@gmail.com" target="_blank">lomon3@gmail.com</a>
-                        </li>
-                        <li class="section-item">
-                            <b>GitHub:</b> <a href="https://github.com/lomon3" class="main-link" title="github.lomon3" target="_blank">@lomon3</a>
-                        </li>
-                        <li class="section-item">
-                            <b>Telegram:</b> <a href="https://t.me/ArChernushevich" class="main-link" title="Telegram">@ArChernushevich</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="section-low" id="about">
-                    <h2>//About myself:</h2>
-                    <p>
-                        At the moment I work as the head of the sales department of toys and lifestyle products on the largest CIS marketplaces.<br> I realized that I want to develop in the field of programming.
-                    </p>
-                </div>
-            </section>
-            <div class="line"></div>
-            <section class="section">
-                <div class="section-low" id="skills">
-                    <h2>//Skills:</h2>
-                    <ul>
-                        <li class="section-item">
-                            HTML, CSS/SASS, JavaScript (Basic)
-                        </li>
-                        <li class="section-item">
-                            Python3, Aiogram
-                        </li>
-                        <li class="section-item">
-                            Git (Basic)
-                        </li>
-                        <li class="section-item">
-                            Adobe Photoshop, CoralDraw
-                        </li>
-                    </ul>
-                </div>
-                <div class="section-low" id="education">
-                    <h2>//Education:</h2>
-                    <ul>
-                        <li class="section-item">
-                            <b>University:</b> BSU. Faculty of Radiophysics and Computer Technologies (2013-2017)
-                        </li>
-                        <li class="section-item">
-                            <b>Cources:</b> RS Schools Course «JavaScript/Front-end. Stage 0» (unfinished)
-                        </li>
-                        <li class="section-item" id="languages">
-                            <b>Languages:</b>
-                            <ul>
-                                <li class="section-item-lang">English - A2</li>
-                                <li class="section-item-lang">Russian - Native</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <div class="line"></div>
-            <section class="section-code" id="code">
-                <h2>//Code example:</h2>
-                <details class="code-details">
-                    <summary class="code-summary">
-                        Telegram bot on python (aiogram). <a href="https://t.me/FrazeologusBot" class="main-link" title="bot-tg" target="_blank">@FrazeologusBot </a>a small piece of code of a periodically launched bot, which is constantly being completed
+
+    <main>
+
+        <section class="left-side wrap">
+            <div class="left-blocks " id="contacts">
+                <h2>// Contacts:</h2>
+                <p>
+                    <b>Location:</b> Minsk, Belarus<br>
+                    <b>Phone:</b> +375‑99‑999‑99‑99<br>
+                    <b>E-mail:</b> <a href="mailto:lomon3@gmail.com&body=привет,Артем?subject=Дело" class="nav-link" title="lomon3@gmail.com" target="_blank">lomon3@gmail.com</a><br>
+                    <b>GitHub:</b> <a href="https://github.com/lomon3" class="nav-link" title="github.lomon3" target="_blank">@lomon3</a><br>
+                    <b>Telegram:</b> <a href="https://t.me/ArChernushevich" class="nav-link" title="Telegram">@ArChernushevich</a>
+                </p>
+            </div>
+            <div class="left-blocks " id="languages">
+                <h2>// Languages:</h2>
+                <p>
+                    <b>English - </b>B1<br>
+                    <b>Russian - </b> native<br>
+                </p>
+            </div>
+            <div class="left-blocks " id="projects">
+                <h2>// Projects:</h2>
+                <p>
+                    <b>Codejam - </b> <a href="https://lomon3.github.io/codejam-eldritch/" class="nav-link" title="Eldritch Horror" target="_blank">Eldritch Horror</a><br>
+
+                    <b>Momentum - </b> <a href="https://rolling-scopes-school.github.io/lomon3-JSFEPRESCHOOL2022Q2/momentum/" class="nav-link" title="Momentum" target="_blank">click</a><br>
+
+                    <b>Travel - </b> <a href="https://rolling-scopes-school.github.io/lomon3-JSFEPRESCHOOL2022Q2/travel/" class="nav-link" title="Travel" target="_blank">click</a><br>
+
+                    <b>This CV - </b> <a href="https://lomon3.github.io/rsschool-cv/" class="nav-link" title="This CV" target="_blank">click</a><br>
+                </p>
+            </div>
+        </section>
+
+        <section class="right-side wrap">
+            <div class="right-blocks" id="education">
+                <h2>// Education:</h2>
+                <p>
+                    <b>University: </b>BSU. Faculty of Radiophysics and Computer Technologies (2013-2017)<br>
+                    <b>Cources: </b>
+                    <li>RS Schools Course «JavaScript/Front-end. Stage 0» <b><a href="https://app.rs.school/certificate/40rf6vq6" class="nav-link" title="github.lomon3" target="_blank">certificate</a></b></li>
+                    <li>RS Schools Course «JavaScript/Front-end. Stage 1» (now)</li>
+                </p>
+            </div>
+            <div class="right-blocks" id="skills">
+                <h2>// Skills:</h2>
+                <p>
+                    <b>HTML, CSS/SASS, JavaScript </b>(Basic)<br>
+                    <b>Python3, Aiogram</b><br>
+                    <b>Git</b><br>
+                    <b>Adobe Photoshop, CoralDraw</b>
+                </p>
+            </div>
+
+            <div class="right-blocks" id="code_example">
+                <h2>// Code example:</h2>
+                <details>
+                    <summary>
+                        Telegram bot on python (aiogram). <a href="https://t.me/FrazeologusBot" class="nav-link" title="bot-tg" target="_blank">@FrazeologusBot </a>a small piece of code of a periodically launched bot, which is constantly being completed
                         and updated.
                     </summary>
 
                     <pre><code>
-		import asyncio
-		import logging
-							
-		from aiogram import Bot, Dispatcher
-		from aiogram.types import BotCommand
-		from aiogram.contrib.fsm_storage.memory import MemoryStorage
-							
-		from app.config_reader import load_config
-		from app.handlers.drinks import register_handlers_drinks
-		from app.handlers.starthelp import register_handlers_starthelp
-		from app.handlers.common import register_handlers_common
-		from data_base import sqlite_db
-		logger = logging.getLogger(__name__)
-							
-							
-		async def set_commands(bot: Bot):
-		commands = [
-		BotCommand(command="/start", description="Начать"),
-		BotCommand(command="/help", description="Помощь"),
-		BotCommand(command="/food", description="Заказать блюда"),
-		BotCommand(command="/cancel", description="Отменить текущее действие")
-		]
-		await bot.set_my_commands(commands)
-							
-							
-		async def main():
-		# Настройка логирования в stdout
-		logging.basicConfig(
-			  level=logging.INFO,
-			  format="%(asctime)s - %(levelname)s - %(name)s - %(message)s",
-		 )
-		 logger.error("Starting bot")
-	
-		 # Парсинг файла конфигурации
-		 config = load_config("config/bot.ini")
-	
-		 # Объявление и инициализация объектов бота и диспетчера
-		 bot = Bot(token=config.tg_bot.token)
-		 dp = Dispatcher(bot, storage=MemoryStorage())
-	
-		 # Регистрация хэндлеров
-		 register_handlers_common(dp, config.tg_bot.admin_id)
-		 register_handlers_drinks(dp)
-		 register_handlers_starthelp(dp)
-	
-		 # Установка команд бота
-		 await set_commands(bot)
-	
-		 #DB start
-		 sqlite_db.sql_start()
-	
-		 # Запуск поллинга
-		 await dp.skip_updates()  # пропуск накопившихся апдейтов (необязательно)
-		 await dp.start_polling()
-	
-	
-		if __name__ == '__main__':
-		 asyncio.run(main())
-  		}
-							</code></pre></details>
-            </section>
-        </div>
+			 
+	 async def set_commands(bot: Bot):
+	 commands = [
+	 BotCommand(command="/start", description="Начать"),
+	 BotCommand(command="/help", description="Помощь"),
+	 BotCommand(command="/food", description="Заказать"),
+	 BotCommand(command="/cancel", description="Отменить")
+	 ]
+	 await bot.set_my_commands(commands)
+				 
+	 async def main():
+	 # Настройка логирования в stdout
+	 logging.basicConfig(
+			level=logging.INFO,
+	  )
+	  logger.error("Starting bot")
+ 
+	  # Парсинг файла конфигурации
+	  config = load_config("config/bot.ini")
+ 
+	  # Объявление и инициализация объектов бота и диспетчера
+	  bot = Bot(token=config.tg_bot.token)
+	  dp = Dispatcher(bot, storage=MemoryStorage())
+ 
+	  # Регистрация хэндлеров
+	  register_handlers_common(dp, config.tg_bot.admin_id)
+	  register_handlers_drinks(dp)
+	  register_handlers_starthelp(dp)
+
+						 </code></pre></details>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-year">2022 MINSK</div>
-            <div>
-                <a href="https://github.com/lomon3" class="nav-link" target="_blank">
-                    <img src="./assets/img/github-logo.png" alt="gh-logo" class="footer-github-logo"> lomon3
-                </a>
-            </div>
-            <div>
-                <a href="https://rs.school/js/" class="rss" target="_blank">
-                    <img src="https://rs.school/images/rs_school_js.svg" alt="RSSchool-logo" class="footer-rss-logo">
-                </a>
-            </div>
+    <footer>
+        <div>2022 MINSK</div>
+        <div>
+            <a href="https://github.com/lomon3" class="nav-link" target="_blank">
+                <img src="./assets/img/github-logo.png" alt="gh-logo" class="footer-github-logo"> lomon3
+            </a>
+        </div>
+        <div>
+            <a href="https://rs.school/js/" target="_blank">
+                <img src="https://rs.school/images/rs_school_js.svg" alt="RSSchool-logo" class="footer-rss-logo">
+            </a>
         </div>
     </footer>
 </body>
