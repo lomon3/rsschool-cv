@@ -126,7 +126,6 @@
 					</summary>
 
 					<pre><code>
-			 
 	 async def set_commands(bot: Bot):
 	 commands = [
 	 BotCommand(command="/start", description="Начать"),
@@ -135,21 +134,17 @@
 	 BotCommand(command="/cancel", description="Отменить")
 	 ]
 	 await bot.set_my_commands(commands)
-				 
 	 async def main():
 	 # Настройка логирования в stdout
 	 logging.basicConfig(
 			level=logging.INFO,
 	  )
 	  logger.error("Starting bot")
- 
 	  # Парсинг файла конфигурации
 	  config = load_config("config/bot.ini")
- 
 	  # Объявление и инициализация объектов бота и диспетчера
 	  bot = Bot(token=config.tg_bot.token)
 	  dp = Dispatcher(bot, storage=MemoryStorage())
- 
 	  # Регистрация хэндлеров
 	  register_handlers_common(dp, config.tg_bot.admin_id)
 	  register_handlers_drinks(dp)
